@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Simple Suite" parallel="methods" thread-count="3" verbose="1">
+    <test name="Web Test">
+        <classes>
+            <class name="scenarios.ex2.webtest.SimpleWebTest"/>
+        </classes>
+    </test>
+</suite>

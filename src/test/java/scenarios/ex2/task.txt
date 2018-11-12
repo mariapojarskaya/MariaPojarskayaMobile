@@ -1,0 +1,24 @@
+1.	Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
+    Мы не множим объекты, когда вызываем драйвер
+
+2.	Suggest improvements for .properties reading. What are the purposes?
+
+    in ex2 I have added static field to test classes
+
+     in ex3 I have added type = {$type} in properties,
+     so that is how I let the Driver know which *.properties it should load
+
+3.	Add checks of other fields and their titles (Contact Name, Contact phone) in “native” test
+
+4.	Optional: Add keyboard presence check  in “native” test.
+    DONE
+5.	Which checks would you place in the “web” test?
+    Title
+    URL
+    Elements Presence
+
+6.	Implement checks for “web” test in code and try to use.
+
+MADE in ex3_for_farm
+
+

@@ -1,7 +1,8 @@
-package hooks;
+package setup.ex3.hooks;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
+import setup.ex3.core.Driver;
 
 import java.io.IOException;
 

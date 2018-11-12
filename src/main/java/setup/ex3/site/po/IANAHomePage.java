@@ -1,4 +1,4 @@
-package ex3.pages;
+package setup.ex3.site.po;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -12,7 +12,8 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
 
-public class HomePage {
+
+public class IANAHomePage {
     private String url;
     private static final String TITLE = "Internet Assigned Numbers Authority";
     private AppiumDriver driver;
@@ -24,7 +25,7 @@ public class HomePage {
     @FindBy(css = ".gsc-search-button button")
     private RemoteWebElement searchButton;
 
-    public HomePage(AppiumDriver driver, String url, WebDriverWait webDriverWait) {
+    public IANAHomePage(AppiumDriver driver, String url, WebDriverWait webDriverWait) {
         this.url = url;
         this.driver = driver;
         this.webDriverWait = webDriverWait;

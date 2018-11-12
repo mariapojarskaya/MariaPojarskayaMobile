@@ -1,8 +1,9 @@
-package ex3.pages;
+package setup.ex3;
 
 import org.openqa.selenium.remote.CapabilityType;
 
-public interface MobileCapabilities extends CapabilityType {
+
+public interface MyMobileCapabilityType extends CapabilityType {
 
     String APP_PACKAGE = "appPackage";
 

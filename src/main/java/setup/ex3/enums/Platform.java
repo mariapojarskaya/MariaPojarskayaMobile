@@ -1,4 +1,4 @@
-package ex3.pages.enums;
+package setup.ex3.enums;
 
 public enum Platform {
     ANDROID("Android"),
