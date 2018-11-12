@@ -33,8 +33,7 @@ public class AddContactPage {
     public void checkIfNameFieldIsDisplayed() {
         Assert.assertTrue(nameField.isDisplayed());
     }
-
-    //DOES NOT WORK
+    //?
     public boolean keyboardIsOpened() throws Exception {
         try {
             String cmd[] = new String[]{"adb", "shell", "dumpsys", "input_method"};
