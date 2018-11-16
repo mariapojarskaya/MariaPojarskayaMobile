@@ -1,23 +1,29 @@
-1.	Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
-    Мы не множим объекты, когда вызываем драйвер
 
-2.	Suggest improvements for .properties reading. What are the purposes?
+1.	Setup project that has been discussed in the class.
+Make sure you can run both tests (native and web) successfully.
+2.	For existing native mobile autotest try to use another locator (xpath, classname, ?).
+Define these locators using Appium Inspector. Are there any difference with id version?
 
-    in ex2 I have added static field to test classes
 
-     in ex3 I have added type = {$type} in properties,
-     so that is how I let the Driver know which *.properties it should load
 
-3.	Add checks of other fields and their titles (Contact Name, Contact phone) in “native” test
+3.	Modify existing tests to run on a real device. What should be changed?
 
-4.	Optional: Add keyboard presence check  in “native” test.
-    DONE
-5.	Which checks would you place in the “web” test?
-    Title
-    URL
-    Elements Presence
+    The only difference was – the “deviceName”  capability
 
-6.	Implement checks for “web” test in code and try to use.
+4.	Connect a real device to Appium (describe required actions) and run tests.
+Are there any difference with run on emulator?
+
+    At first could not manage how to start session on real device. PHILIPS Xenium W6610
+    It came out that the MIUI 8 and above works strange.
+    The device asked me to insert the SIM card6 so after that I could turn on “Install via USB” option.
+    So test was passed
+
+5.	What should be improved/changed in existing test code? Why, for what?
+
+    No hardcore values nor absolute path
+    Thread.sleep should be removed
+    The project structure should be fixed
+    These are not test cause they have no asserts
 
 
 

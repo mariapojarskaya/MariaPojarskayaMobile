@@ -4,7 +4,7 @@
 <suite name="Simple Suite" parallel="methods" thread-count="3" verbose="1">
     <test name="Native Test">
         <classes>
-            <class name="scenarios.ex2.nativeTest.SimpleNativeTest"/>
+            <class name="scenarios.ex3.nativeTest.SimpleNativeTest"/>
         </classes>
     </test>
 </suite>

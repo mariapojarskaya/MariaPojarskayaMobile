@@ -1,45 +1,35 @@
-package scenarios.ex1;
+package scenarios.ex2;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import scenarios.ex1.DriverSetup;
 
 public class FirstSimpleTest extends DriverSetup {
 
-    @BeforeClass
+    @BeforeClass(description = "Prepare driver to run test(s)")
     public void setUp() throws Exception {
         prepareAndroidNative();
-//        prepareAndroidWeb();
+        //prepareAndroidWeb();
     }
 
-
-    @Test(description = "This test clicks on button 'Add contact'")
-    public void SimplestTest() {
+    @Test(description = "This simple test just click on button 'Add contact'")
+    public void simplestTest(){
         String app_package_name = "com.example.android.contactmanager:id/";
-
-        // Button locator by id
-//        By buttonBy = By.id(app_package_name + "addContactButton");
-
-        // Button locator by xpath
-//        By buttonBy = By.xpath("//android.widget.Button[@content-desc='Add Contact']");
-
-        //Button locator by className
-        By buttonBy = By.className("android.widget.Button");
-
-        driver.findElement(buttonBy).click();
+        By add_btn1 = By.id(app_package_name + "addContactButton");
+        By add_btn2 = By.xpath("//android.widget.Button[@content-desc=\"Add Contact\"]");
+        By add_btn3 = By.className("android.widget.Button");
+        driver.findElement(add_btn3).click();
         System.out.println("Simplest Appium test done");
     }
 
-
-    //    @Test(description = "Open website")
+    //@Test(description = "Open website")
     public void webTest() throws InterruptedException {
         driver.get("http://iana.org");
         Thread.sleep(5000);
         System.out.println("Site opening done");
     }
 
-    @AfterClass
+    @AfterClass(description = "Close driver on all tests completion")
     public void tearDown() throws Exception {
         driver.quit();
     }

@@ -1,18 +1,6 @@
-1.	Add support of appPackage and appActivity parameters for Android devices
- (reading from a .properties file and then setting in the DesiredCapabilities).
- Locally installed Appium DT doesn’t need these parameters,
- but for Appium server of Mobile Farm (Minsk, SPb) it’s mandatory.
- done
-
-2.	Change settings to run web test on a certain iOS device on Mobile Test Farm.
-Run test with your changes. Did test pass?
-
-Test passed without specifying certain device.
-Test passed with udid
-
-3.	Change settings to run native test on a certain/random Android device on Mobile Test Farm. Run test with your changes. Did test pass?
-Passed after some work with Driver.class.
-
-4.	What’s wrong with our code? How to fix/improve it? Implement your suggestions.
-I made page object for both native and web tests
-Also made some enums for constants: package names, keys from properties, messages for exceptions
+1. Rewrite (complete) Driver using “singleton” pattern. Are there any advantages?
+2. Suggest improvements for .properties reading. What are the purposes?
+3. Add checks of other fields and their titles (Contact Name, Contact phone) in “native” test
+4. Optional: Add keyboard presence check in “native” test.
+5. Which checks would you place in the “web” test?
+6. Implement checks for “web” test in code and try to use.

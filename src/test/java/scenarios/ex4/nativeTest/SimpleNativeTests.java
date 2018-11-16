@@ -1,4 +1,4 @@
-package scenarios.ex3.nativeTest;
+package scenarios.ex4.nativeTest;
 
 import pageObject.apk.contactManager.AddContactScreen;
 import pageObject.apk.contactManager.BaseScreen;
@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 @Test(groups = "native")
-public class SimpleNativeTest {
+public class SimpleNativeTests {
 
     private BaseScreen baseScreen;
     private HomeScreen homeScreen;
@@ -38,3 +38,4 @@ public class SimpleNativeTest {
         addContactScreen.checkContactPhoneEdit();
     }
 }
+

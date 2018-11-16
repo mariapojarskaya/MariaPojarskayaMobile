@@ -1,5 +1,4 @@
-package scenarios.ex3.webtest;
-
+package scenarios.ex4.webTest;
 
 import pageObject.web.ianaOrg.HomePage;
 import setup.Driver;
