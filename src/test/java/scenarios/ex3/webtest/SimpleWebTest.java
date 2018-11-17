@@ -1,11 +1,11 @@
 package scenarios.ex3.webtest;
 
 
-import pageObject.web.ianaOrg.HomePage;
-import setup.Driver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pageObject.web.ianaOrg.HomePage;
+import setup.Driver;
 
 @Test(groups = "web")
 public class SimpleWebTest extends Driver {

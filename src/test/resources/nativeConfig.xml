@@ -1,10 +1,15 @@
-<?xml version="1.0" encoding="WINDOWS-1251"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Simple Suite" parallel="methods" thread-count="3" verbose="1">
-    <test name="Native Test">
-        <classes>
-            <class name="scenarios.ex3.nativeTest.SimpleNativeTest"/>
-        </classes>
+<suite name="Mobile test suite" verbose="1" >
+    <test name="Native tests">
+        <groups>
+            <run>
+                <exclude name="web" />
+                <include name="native"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="ex3.scenarios.*"/>
+        </packages>
     </test>
 </suite>
