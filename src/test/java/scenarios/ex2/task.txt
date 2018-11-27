@@ -1,9 +1,17 @@
 
 1.	Setup project that has been discussed in the class.
 Make sure you can run both tests (native and web) successfully.
+
 2.	For existing native mobile autotest try to use another locator (xpath, classname, ?).
 Define these locators using Appium Inspector. Are there any difference with id version?
 
+5037(native port)
+52007517ee2515cd device
+ip: 192.168.100.2
+device product:j5y17ltexxm
+model:SM_J530FM
+device:j5y17lte
+transport_id:7
 
 
 3.	Modify existing tests to run on a real device. What should be changed?
