@@ -1,7 +1,5 @@
 package setup;
 
-import enums.PropertiesFiles;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -15,7 +13,7 @@ class TestProperties {
     }
 
     private Properties getCurrentProps() throws IOException {
-        FileInputStream in = new FileInputStream(System.getProperty("user.dir")+"\\"+propertyTitle);
+        FileInputStream in = new FileInputStream(System.getProperty("user.dir")+"/"+propertyTitle);
         currentProps.load(in);
         in.close();
         return currentProps;
