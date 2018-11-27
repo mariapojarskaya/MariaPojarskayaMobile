@@ -1,7 +1,7 @@
 package enums;
 
 public enum PropertiesFiles {
-    NATIVE("nativetests.properties"), WEB("webtests.properties");
+    NATIVE("nativetest.properties"), WEB("webtest.properties");
 
     public String name;
 

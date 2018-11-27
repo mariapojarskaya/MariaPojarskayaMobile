@@ -1,16 +1,20 @@
 package scenarios.ex4.webTest;
 
-import pageObject.web.ianaOrg.HomePage;
-import setup.Driver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pageObject.web.ianaOrg.HomePage;
+import setup.Driver;
+
+import java.io.IOException;
 
 @Test(groups = "web")
 public class SimpleWebTest extends Driver {
 
     private HomePage homePage;
-
+    protected SimpleWebTest() throws IOException {
+        super();
+    }
     @BeforeClass
     public void beforeClass() {
         driver().get(SUT);

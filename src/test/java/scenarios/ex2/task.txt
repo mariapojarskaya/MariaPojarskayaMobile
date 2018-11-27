@@ -9,7 +9,7 @@ Define these locators using Appium Inspector. Are there any difference with id v
 52007517ee2515cd device
 ip: 192.168.100.2
 device product:j5y17ltexxm
-model:SM_J530FM
+model:Xenium W6610
 device:j5y17lte
 transport_id:7
 
