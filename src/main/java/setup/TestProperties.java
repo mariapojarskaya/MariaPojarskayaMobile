@@ -9,6 +9,7 @@ class TestProperties {
     private String propertyTitle;
 
     TestProperties(String propertiesFileName) {
+
         propertyTitle = propertiesFileName;
     }
 
